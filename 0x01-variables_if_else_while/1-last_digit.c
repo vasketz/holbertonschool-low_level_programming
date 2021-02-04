@@ -4,8 +4,9 @@
 
 /**
  * main - Entry point and execute the ramdon number
+ *do the last digit
  *
- * Return: 0
+ * Return: lst_dgit
  */
 
 int main(void)
