@@ -3,8 +3,8 @@
 #include <time.h>
 
 /**
- * main - Entry point and execute the ramdon number
- *do the last digit
+ * main - Entry point and execute the ramdon number and print the last digit
+ *
  *
  * Return: 0
  */
