@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - Entry point and execute the ramdon number
  *
  * Return: 0
  */
@@ -24,7 +24,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is zero", n);
+		printf("%i is zero", n);
 	}
 	return (0);
 }
