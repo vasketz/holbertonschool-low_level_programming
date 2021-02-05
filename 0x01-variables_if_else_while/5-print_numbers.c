@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - Entry point and execute the ramdon number
+ * main - Entry point and execute the numbers
  *
  * Return: 0
  */
