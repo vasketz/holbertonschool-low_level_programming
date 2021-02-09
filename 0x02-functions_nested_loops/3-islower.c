@@ -1,14 +1,13 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
  * _islower - check if is lower case
  *
  * Return: Always 0.
  */
-int _islower(void)
+int _islower(int c)
 {
 
-	if (c == islower(c))
+	if (c <= 97 && c <= 122)
 	{
 		return (1);
 	}
