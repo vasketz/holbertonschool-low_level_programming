@@ -28,6 +28,10 @@ int print_sign(int n);
  */
 int _abs(int);
 /**
- * This funtion prints the last digit of a number
+ * This function prints the last digit of a number
  */
 int print_last_digit(int);
+/**
+ * This function prints every minute of the day
+ */
+void jack_bauer(void);
