@@ -20,6 +20,10 @@ int _islower(int c);
  */
 int _isalpha(int c);
 /**
- * this function print the sign of a number
+ * This function print the sign of a number
  */
 int print_sign(int n);
+/**
+ * This function computes de absolute value of an integer
+ */
+int _abs(int);
