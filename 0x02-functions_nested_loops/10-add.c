@@ -5,10 +5,8 @@
  *
  * Return: Always 0.
  */
-int add(void)
+int add(int n1, int n2)
 {
-	int n1 = 0;
-	int n2 = 0;
 	int sum;
 	sum = (n1 + n2);
 	return (sum);
