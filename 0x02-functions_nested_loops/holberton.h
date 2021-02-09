@@ -19,3 +19,7 @@ int _islower(int c);
  * This function check for alpha numeric
  */
 int _isalpha(int c);
+/**
+ * this function print the sign of a number
+ */
+int print_sign(int n);
