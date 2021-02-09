@@ -1,11 +1,9 @@
 #include "holberton.h"
 /**
- * main - Entry point, program to print alphabet
+ * print_alphabet - program to print alphabet
  *
- *
- * void
+ * Return: Always 0 (Success)
  */
-
 void print_alphabet(void)
 {
 	int a = 'a';
