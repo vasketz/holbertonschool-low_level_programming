@@ -2,17 +2,18 @@
 /**
  * main - Entry point, program to print alphabet
  *
- * Return: 0
+ *
+ * void
  */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	int a = 'a';
+
 	while (a <= 'z')
 	{
 		_putchar(a);
 		a++;
 	}
 	_putchar('\n');
-	return(0);
 }
