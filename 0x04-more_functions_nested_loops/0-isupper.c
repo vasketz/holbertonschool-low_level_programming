@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _isupper - check the code for Holberton School students.
+ *@c: is a variable
  * Return: Always 0.
  */
 int _isupper(int c)
