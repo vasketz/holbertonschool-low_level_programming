@@ -12,8 +12,9 @@ int _isupper(int c)
 	{
 		return (1);
 	}
-	else
+	else if (c != 'A')
 	{
 		return (0);
 	}
+	return (0);
 }
