@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isupper - check the code for Holberton School students.
+ * _isdigit - check the code for Holberton School students.
  *@c: is a variable
  * Return: Always 0.
  */
