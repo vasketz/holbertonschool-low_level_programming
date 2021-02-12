@@ -34,3 +34,7 @@ void print_line(int n);
  *This function prints a diagonal line on terminal
  */
 void print_diagonal(int n);
+/**
+ *This function prints a square with a newline
+ */
+void print_square(int size);
