@@ -30,3 +30,7 @@ void more_numbers(void);
  *This function prints a line
  */
 void print_line(int n);
+/**
+ *This function prints a diagonal line on terminal
+ */
+void print_diagonal(int n);
