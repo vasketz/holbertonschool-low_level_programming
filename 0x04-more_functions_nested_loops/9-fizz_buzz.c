@@ -7,7 +7,6 @@
 int main(void)
 {
 	int i;
-	int n = 100;
 
 	for (i = 1; i <= n; i++)
 	{
@@ -27,7 +26,7 @@ int main(void)
 		{
 			printf("%d ", i);
 		}
-		if (i != n)
+		if (i != 100)
 		{
 			printf(" ");
 		}
