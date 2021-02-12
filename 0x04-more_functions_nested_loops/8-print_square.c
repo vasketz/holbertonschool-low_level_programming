@@ -16,10 +16,10 @@ void print_square(int size)
 		{
 			_putchar(35);
 		}
-		if (fila > size)
+		if (col != size - 1)
 		{
-			_putchar(32);
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
