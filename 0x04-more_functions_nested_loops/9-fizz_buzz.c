@@ -6,10 +6,9 @@
  */
 int main(void)
 {
-	int n = 100;
 	int i;
 
-	for (i = 1; i <= n; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
