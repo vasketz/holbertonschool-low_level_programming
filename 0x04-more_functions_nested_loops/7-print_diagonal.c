@@ -11,7 +11,7 @@ void print_diagonal(int n)
 	int col;
 
 	if (n > 0)
-		for (col = 0; col < n +1; col++)
+		for (col = 0; col < n + 1; col++)
 		{
 			for (line = 0; line < col; line++)
 			{
