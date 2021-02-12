@@ -16,6 +16,10 @@ void print_square(int size)
 		{
 			_putchar(35);
 		}
+		if (fila > size)
+		{
+			_putchar(32);
+		}
 		_putchar('\n');
 	}
 }
