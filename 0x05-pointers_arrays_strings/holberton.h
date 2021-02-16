@@ -18,3 +18,7 @@ int _strlen(char *s);
  *This function prints string follow with a new line
  */
 void _puts(char *str);
+/**
+ *This function prints a string in reverse
+ */
+void print_rev(char *s);
