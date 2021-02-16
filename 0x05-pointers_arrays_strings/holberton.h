@@ -22,3 +22,7 @@ void _puts(char *str);
  *This function prints a string in reverse
  */
 void print_rev(char *s);
+/**
+ *This function prints string in rev
+ */
+void rev_string(char *s);
