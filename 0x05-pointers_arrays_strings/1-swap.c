@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * swap_int - check the code for Holberton School students.
+ *@a: is a pointer variable
+ *@b: is a pointer variable
  * Return: Always 0.
  */
 void swap_int(int *a, int *b)
