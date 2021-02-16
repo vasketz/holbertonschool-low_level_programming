@@ -1,0 +1,1 @@
+*This folder contains the folder of pointers and arrays*
