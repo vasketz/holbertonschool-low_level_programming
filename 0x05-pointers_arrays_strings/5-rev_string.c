@@ -7,19 +7,16 @@
  */
 void rev_string(char *s)
 {
-	int l, i;
-	char *left, *right, ch;
+	int izq = 0;
+	int der;
+	int l = strlen(s);
+	char temp;
 
-	l = strlen(s);
-	left = s;
-	right = s + l - 1;
 
-	for (i = 0; i < l / 2; i++)
+	for (izq = 0, der = l - 1; izq < (l / 2); izq++, der--)
 	{
-		ch = *right;
-		*right = *left;
-		*left = ch;
-		left++;
-		right--;
+		temp = s[izq];
+		s[izq] = s[der];
+		s[der] = temp;
 	}
 }
