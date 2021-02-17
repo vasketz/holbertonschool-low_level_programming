@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <string.h>
 /**
- * print_rev - check the code for Holberton School students.
+ * rev_string - check the code for Holberton School students.
  *@s: is a pointer variable
  * Return: Always 0.
  */
@@ -9,6 +9,7 @@ void rev_string(char *s)
 {
 	int l, i;
 	char *left, *right, ch;
+
 	l = strlen(s);
 	left = s;
 	right = s + l - 1;
