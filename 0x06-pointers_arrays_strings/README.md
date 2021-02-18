@@ -1,0 +1,1 @@
+* This are more functions of pointers, arrays, and strings *
