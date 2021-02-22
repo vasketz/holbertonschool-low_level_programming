@@ -2,13 +2,13 @@
 #include "holberton.h"
 
 /**
- * memcpy - copy the first n bytes of the memory area
- *      pointed to by @s with the constant byte @c.
- * @s: A pointer to the memory area to be filled.
- * @c: The character to fill the memory area with.
+ * _memcpy - copy the first n bytes of the memory area
+ *      pointed to by @dest with the constant byte @src.
+ * @dest: A pointer to the memory area to be filled.
+ * @src: The character to fill the memory area with.
  * @n: The number of bytes to be filled.
  *
- * Return: A pointer to the filled memory area @s.
+ * Return: a pointer to the filled memory area @dest.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
