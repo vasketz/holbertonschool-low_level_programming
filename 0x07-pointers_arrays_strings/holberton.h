@@ -14,3 +14,7 @@ char *_strchr(char *s, char c);
  *This function gets the length of a prefix substring
  */
 unsigned int _strspn(char *s, char *accept);
+/**
+ *This function locates the first occurence in the string s of any of the bytes in the string accept
+ */
+char *_strpbrk(char *s, char *accept);
