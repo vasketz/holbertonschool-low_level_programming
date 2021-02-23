@@ -2,9 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * _strpbrk - check the code for Holberton School students.
+ *@s: is a variable pointer
+ *@accept: is a variable point
  *
- * Return: Always 0.
+ * Return: NULL.
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -29,14 +31,14 @@ char *_strpbrk(char *s, char *accept)
 					flag = 1;
 				}
 			}
-		}	
+		}
 	}
 	if (flag == 1)
 	{
-		return &s[pos];
+		return (&s[pos]);
 	}
 	else
 	{
-		return NULL;
+		return (NULL);
 	}
 }
