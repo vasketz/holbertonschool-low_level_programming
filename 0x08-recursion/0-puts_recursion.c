@@ -13,14 +13,6 @@ void _puts_recursion(char *s)
 		return;
 	}
 
-	if ((s[0] <= 122 && s[0] >= 97) || (s[0] <= 90 && s[0] >= 65))
-	{
-		_putchar(s[0]);
-	}
-
-	if (s[0] == 32)
-	{
-		_putchar(s[0]);
-	}
+	_putchar(s[0]);
 	_puts_recursion(s + 1);
 }
