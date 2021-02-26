@@ -27,6 +27,10 @@ int _pow_recursion(int x, int y);
  */
 int _sqrt_recursion(int n);
 /**
- *This fuunction returns 1 if the input is an integer, otherwise return 0
+ *This function returns 1 if the input is an integer, otherwise return 0
  */
 int is_prime_number(int n);
+/**
+ *This function returns 1 if the string is palindrome, otherwise return 0
+ */
+int is_palindrome(char *s);
