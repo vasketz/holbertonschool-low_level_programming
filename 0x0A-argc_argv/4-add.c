@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
+int isNum(char *n);
 /**
  * main - prints its name followed by a new line
  * @argc: is an argument of the main function.
@@ -19,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] >= '0' && *argv[i] <= '9')
+		if (isNum(argv[i]))
 		{
 			res = res + atoi(argv[i]);
 		}
@@ -29,6 +31,31 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
+
 	printf("%d\n", res);
 	return (0);
+}
+
+/**
+ * isNum - prints its name followed by a new line
+ * @n: is pointer variable.
+ * Return: 0.
+ */
+
+int isNum(char *n)
+{
+	int i = 0;
+
+	while (n[i] != '\0')
+	{
+		if (isdigit(n[i]))
+		{
+			i++;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
 }
