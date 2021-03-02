@@ -15,17 +15,22 @@ char *create_array(unsigned int size, char c)
 	char *ps;
 	unsigned int i;
 
-	ps = malloc((size + 1) * sizeof(char));
-	if (ps == NULL)
+	if (size == 0)
 	{
-		return (0);
+		return (NULL);
 	}
+
+	ps = malloc((size) * sizeof(char));
 	i = 0;
+
 	while (i < size)
 	{
 		ps[i] = c;
 		i++;
 	}
-	ps[i] = '\0';
-	return (ps);
+	if (ps[i] == '\0')
+	{
+		return (ps);
+	}
+	return (0);
 }
