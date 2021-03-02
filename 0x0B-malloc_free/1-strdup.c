@@ -4,22 +4,25 @@
 
 /**
  * _strcpy - Create an array
- * @s: the address of memory to print
- * @d: the size of the memory to print
+ * @dest: the address of memory to print
+ * @src: the size of the memory to print
  *
  * Return: string.
  */
 
-char *_strcpy(char *d, char *s)
+char *_strcpy(char *dest, char *src)
 {
-	char *saved = d;
+	int l, r;
 
-	while (*s)
+	for (l = 0; src[l] != '\0'; l++)
+	{}
+	for (r = 0; r < l; r++)
 	{
-		*d++ = *s++;
+		dest[r] = src[r];
 	}
-	return (saved);
+	return (dest);
 }
+
 
 /**
  * _strdup - Create an array
