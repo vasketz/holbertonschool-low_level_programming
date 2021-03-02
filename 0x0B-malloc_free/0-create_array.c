@@ -12,25 +12,25 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *ps;
-	unsigned int i;
+	char *ptr;
+	unsigned int i = 0;
 
+	ptr = malloc((size) * sizeof(*ptr));
 	if (size == 0)
 	{
 		return (NULL);
 	}
-
-	ps = malloc((size) * sizeof(char));
-	i = 0;
-
-	while (i < size)
+	else
 	{
-		ps[i] = c;
-		i++;
+		if (ptr == 0)
+		{
+			return (0);
+		}
+		while (i < size)
+		{
+			ptr[i] = c;
+			i++;
+		}
 	}
-	if (ps[i] == '\0')
-	{
-		return (ps);
-	}
-	return (0);
+		return (ptr);
 }
