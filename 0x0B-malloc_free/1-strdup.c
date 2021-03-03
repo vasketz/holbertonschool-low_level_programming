@@ -15,21 +15,18 @@ char *_strdup(char *str)
 	char *ptr;
 	int i;
 
+	for (i = 0; i < *str + 1; i++)
+	{}
 	if (str == NULL)
 	{
 		return (NULL);
-	}
-	for (i = 0; i < *str + 1; i++)
-	{}
+	}	
 	ptr = malloc((*str + 1) * sizeof(char));
 	if (ptr == 0)
 	{
 		return (NULL);
 	}
-	else
-	{
 		_strcpy(ptr, str);
-	}
 	return (ptr);
 }
 
