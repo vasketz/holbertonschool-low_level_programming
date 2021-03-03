@@ -34,7 +34,7 @@ char *_strdup(char *str)
 {
 	char *ptr;
 
-	ptr = malloc((*str) * sizeof(char));
+	ptr = malloc((*str) * sizeof(*ptr));
 	if (ptr == 0)
 	{
 		return (NULL);
@@ -42,11 +42,10 @@ char *_strdup(char *str)
 	else
 	{
 		_strcpy(ptr, str);
-		if (str == NULL)
-		{
-			return (NULL);
-		}
 	}
-	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	return (ptr);
 }
