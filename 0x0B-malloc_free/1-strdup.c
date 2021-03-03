@@ -2,6 +2,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char *_strcpy(char *dest, char *src);
+
+/**
+ * _strdup - Create an array
+ * @str: the size of the memory to print
+ * Return: string.
+ */
+
+char *_strdup(char *str)
+{
+	char *ptr;
+
+	ptr = malloc((*str + 1) * sizeof(char));
+	if (ptr == 0)
+	{
+		return (NULL);
+	}
+	else
+	{
+		_strcpy(ptr, str);
+	}
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	return (ptr);
+}
+
 /**
  * _strcpy - Create an array
  * @dest: the address of memory to print
@@ -21,31 +49,4 @@ char *_strcpy(char *dest, char *src)
 		dest[count] = src[count];
 	}
 	return (dest);
-}
-
-
-/**
- * _strdup - Create an array
- * @str: the size of the memory to print
- * Return: string.
- */
-
-char *_strdup(char *str)
-{
-	char *ptr;
-
-	ptr = malloc((*str) * sizeof(*ptr));
-	if (ptr == 0)
-	{
-		return (NULL);
-	}
-	else
-	{
-		_strcpy(ptr, str);
-	}
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-	return (ptr);
 }
