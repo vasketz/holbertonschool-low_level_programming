@@ -42,10 +42,11 @@ char *_strdup(char *str)
 	else
 	{
 		_strcpy(ptr, str);
+		if (str == NULL)
+		{
+			return (NULL);
+		}
 	}
-	if (str == NULL)
-	{
-		return (NULL);
-	}
+	
 	return (ptr);
 }
