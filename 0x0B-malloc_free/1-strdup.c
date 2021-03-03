@@ -13,8 +13,11 @@ char *_strcpy(char *dest, char *src);
 char *_strdup(char *str)
 {
 	char *ptr;
+	int i;
 
-	ptr = malloc((*str + 1) * sizeof(char));
+	for (i = 0; i < *str; i++)
+	{}
+	ptr = malloc((i + 1) * sizeof(char));
 	if (ptr == 0)
 	{
 		return (NULL);
@@ -42,11 +45,12 @@ char *_strdup(char *str)
 
 char *_strcpy(char *dest, char *src)
 {
-   char *saved = dest;
-   while (*src)
-   {
-       *dest++ = *src++;
-   }
-   *dest = 0;
-   return saved;
+	char *saved = dest;
+
+	while (*src)
+	{
+		*dest++ = *src++;
+	}
+	*dest = 0;
+	return (saved);
 }
