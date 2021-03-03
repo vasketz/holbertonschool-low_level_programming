@@ -39,15 +39,14 @@ char *_strdup(char *str)
  * Return: string.
  */
 
+
 char *_strcpy(char *dest, char *src)
 {
-	int len, count;
-
-	for (len = 0; src[len] != '\0'; len++)
-	{}
-	for (count = 0; count < len; count++)
-	{
-		dest[count] = src[count];
-	}
-	return (dest);
+   char *saved = dest;
+   while (*src)
+   {
+       *dest++ = *src++;
+   }
+   *dest = 0;
+   return saved;
 }
