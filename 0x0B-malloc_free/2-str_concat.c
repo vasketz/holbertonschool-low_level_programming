@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *_strcat(char *dest, char *src);
 
 /**
  * str_concat - check the code for Holberton School students.
@@ -20,9 +19,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
-	for (i = 0; s1[i] == '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{}
-	for (y = 0; s2[y] == '\0'; y++)
+	for (y = 0; s2[y] != '\0'; y++)
 	{}
 	s1s2 = (i + y + 1);
 	ptr = malloc((s1s2) * sizeof(char));
