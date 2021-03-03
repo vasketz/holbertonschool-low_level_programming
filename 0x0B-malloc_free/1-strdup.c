@@ -43,7 +43,7 @@ char *_strdup(char *str)
 	{
 		_strcpy(ptr, str);
 	}
-	if (str == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
