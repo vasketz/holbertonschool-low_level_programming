@@ -30,8 +30,8 @@ char *_strdup(char *str)
 	{
 		_strcpy(ptr, str);
 	}
-	
 	return (ptr);
+	free(ptr);
 }
 
 /**
