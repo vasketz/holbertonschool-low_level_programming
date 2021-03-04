@@ -3,18 +3,19 @@
 #include <stdlib.h>
 
 /**
- * @brief 
- * 
+ * malloc_checked - allocated space in memory
+ * @b: is a variable
+ * Return: pointer
  */
 
 void *malloc_checked(unsigned int b)
 {
- 	unsigned int *ptrc;
-	 
+	unsigned int *ptrc;
+
 	ptrc = (unsigned int *)malloc(b);
 	if (ptrc == NULL)
 	{
-		exit (98);
+		exit(98);
 	}
 	return (ptrc);
 }
