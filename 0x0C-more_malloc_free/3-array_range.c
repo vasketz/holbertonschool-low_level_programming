@@ -19,7 +19,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 	{
-		return (0);
+		return (NULL);
 	}
 	i = (max - min + 1);
 	ptri = malloc(sizeof(int) * i);
