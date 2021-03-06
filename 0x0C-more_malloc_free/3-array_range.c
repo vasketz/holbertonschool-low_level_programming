@@ -15,7 +15,7 @@ int *array_range(int min, int max)
 {
 	int *ptri;
 	int i;
-	int x = 0;
+	int x;
 
 	if (min > max)
 	{
@@ -27,8 +27,8 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	x = min;
-	while (x <= max)
+	x = 0;
+	while (min <= max)
 	{
 		ptri[x] = min;
 		min++;
