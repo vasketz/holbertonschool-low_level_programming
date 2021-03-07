@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * puts2- check the code for Holberton School students.
+ * puts_half - check the code for Holberton School students.
  *@str: is a pointer variable
  * Return: Always 0.
  */
