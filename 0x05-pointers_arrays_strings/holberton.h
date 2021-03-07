@@ -38,3 +38,7 @@ void puts_half(char *str);
  * Thhis function prints the elements of an array
  */
 void print_array(int *a, int n);
+/**
+ * This function copy a string
+ */
+char *_strcpy(char *dest, char *src);
