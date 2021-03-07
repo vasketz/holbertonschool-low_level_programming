@@ -30,3 +30,7 @@ void rev_string(char *s);
  * This function prints pairs numbers
  */
 void puts2(char *str);
+/**
+ * This function prints half of string
+ */
+void puts_half(char *str);
