@@ -26,3 +26,7 @@ void print_rev(char *s);
  *This function prints string in rev
  */
 void rev_string(char *s);
+/**
+ * This function prints pairs numbers
+ */
+void puts2(char *str);
