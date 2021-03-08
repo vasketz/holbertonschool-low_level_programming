@@ -1,0 +1,1 @@
+*This folder contains the structures and typedef project*
