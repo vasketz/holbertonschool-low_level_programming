@@ -1,1 +1,1 @@
-*this folder contains the preprosesor project*
+*this folder contains the preprocessor project*
