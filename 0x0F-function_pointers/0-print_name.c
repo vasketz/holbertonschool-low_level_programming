@@ -1,8 +1,10 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- * @brief 
- * 
+ * print_name - print name of the main file
+ * @name: is a pointer
+ * @f: is a pointer function
+ * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
