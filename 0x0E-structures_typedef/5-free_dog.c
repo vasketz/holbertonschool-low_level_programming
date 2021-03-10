@@ -2,11 +2,8 @@
 #include <stdlib.h>
 
 /**
- * init_dog - Short description
+ * free_dog - Short description
  * @d: struct pointer
- * @name: first member
- *@age: second member
- *@owner: third membber
  * Description: Longer description
  */
 
