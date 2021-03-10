@@ -1,5 +1,6 @@
 #ifndef FUNCTION_POINTER_H
 #define FUNCTION_POINTER_H
+#include <stddef.h>
 /**
  * print_name - This function print name
  * @name: is a pointer
