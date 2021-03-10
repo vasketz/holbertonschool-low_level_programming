@@ -2,8 +2,11 @@
 #include <stdio.h>
 
 /**
- * @brief 
- * 
+ * array_iterator - print an array of intergers
+ * @array: an array
+ * @size: size
+ * @action: pointer to function
+ *
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
