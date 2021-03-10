@@ -1,0 +1,4 @@
+/**
+ * This function print name 
+ */
+void print_name(char *name, void (*f)(char *));
