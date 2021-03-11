@@ -6,5 +6,11 @@
  * Return: sum.
  */
 int sum_them_all(const unsigned int n, ...);
-
+/**
+ * print_numbers - of an array with variadic
+ * @separator 
+ * @n 
+ * Return: void 
+ */
+void print_numbers(const char *separator, const unsigned int n, ...);
 #endif
