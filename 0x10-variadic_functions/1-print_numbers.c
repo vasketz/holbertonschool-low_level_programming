@@ -15,17 +15,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(argptr, n);
 
-	while (i < n)
+	while (i++ < n)
 	{
 		if (separator != '\0')
 		{
 			printf("%d", va_arg(argptr, unsigned int));
-			if (i < n - 1)
+			if (i < n)
 			{
 				printf("%s", separator);
 			}
 		}
-		i++;
 	}
 	printf("\n");
 	va_end(argptr);
