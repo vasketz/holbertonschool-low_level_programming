@@ -2,15 +2,16 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-
 /**
- * print_numbers - check the code for Holberton School students.
+ * print_strings - print string.
  * @separator: char space.
  * @n: variable
  * void.
  */
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	char *ptr;
 	unsigned int i = 0;
 	va_list argptr;
 
@@ -18,17 +19,22 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	while (i++ < n)
 	{
+		ptr = va_arg(argptr, char *);
+
+		if (ptr == NULL)
+		{
+			printf("(nil)");
+		}
+		else
+		{
+			printf("%s", ptr);
+		}
 		if (separator != '\0')
 		{
-			printf("%s", va_arg(argptr, char *));
 			if (i < n)
 			{
 				printf("%s", separator);
 			}
-		}
-		else if (!i)
-		{
-			printf("(nil)");
 		}
 	}
 	printf("\n");
