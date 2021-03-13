@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * get_op_func - gets the op function
+ * @s: pointer variable
+ * Return: struct
+ */
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
