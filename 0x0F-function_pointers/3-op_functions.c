@@ -48,7 +48,7 @@ int op_div(int a, int b)
 	return (a / b);
 }
 /**
- * op_div - add function
+ * op_mod - add function
  * @a: variable int
  * @b: variable int
  * Return: int
