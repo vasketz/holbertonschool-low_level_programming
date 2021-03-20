@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - Entry point and execute the numbers with putchar
- *
  * Return: 0
  */
-
 int main(void)
 {
 	int x;
