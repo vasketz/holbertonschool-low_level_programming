@@ -38,3 +38,7 @@ void print_diagonal(int n);
  *This function prints a square with a newline
  */
 void print_square(int size);
+/**
+ *This function prints a tringle
+ */
+void print_triangle(int size);
