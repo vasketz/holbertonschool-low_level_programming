@@ -42,3 +42,7 @@ void print_square(int size);
  *This function prints a tringle
  */
 void print_triangle(int size);
+/**
+ *This function prints number
+ */
+void print_number(int n);
