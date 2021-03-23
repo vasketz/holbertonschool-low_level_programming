@@ -2,7 +2,6 @@
 
 /**
  * print_listint - print the elemest of the list
- * 
  * @h: is a pointer variable.
  * Return: the number of elements
  */
