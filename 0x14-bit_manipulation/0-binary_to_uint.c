@@ -11,6 +11,10 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int x = 1;
 	unsigned int y = 0;
 
+	if (b == NULL)
+	{
+		return (0);
+	}
 	for (lon = 0; b[lon] != '\0'; lon++)
 	{}
 
