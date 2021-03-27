@@ -1,6 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
-int is_blank(char c);
+unsigned int is_blank(char c);
 /**
  * cap_string - capitalize string
  * @str: pointer to string
@@ -9,7 +9,7 @@ int is_blank(char c);
 
 char *cap_string(char *str)
 {
-	int blank;
+	unsigned int blank;
 
 	if (*str)
 	{
@@ -32,7 +32,7 @@ char *cap_string(char *str)
  * @c: variable
  * Return: int
  */
-int is_blank(char c)
+unsigned int is_blank(char c)
 {
 	return ((c == ' ') || (c == '\t' || c == '\n'));
 }
