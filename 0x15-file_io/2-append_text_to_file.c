@@ -8,7 +8,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file, print;
-	int sz;
+	int sz = 0;
 
 	if (filename == NULL)
 	{
@@ -16,8 +16,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	if (text_content != NULL)
 	{
-		for (sz = 0; text_content[sz]; sz++)
-		{}
+		while (text_content[sz] =! '\0')
+		{
+			sz++;
+		}
 	}
 	file = open(filename, O_WRONLY | O_APPEND);
 	if (file == -1)
