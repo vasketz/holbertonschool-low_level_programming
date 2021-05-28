@@ -1,0 +1,1 @@
+*This folder contains the project of hash tables in C of Holberton school*
